@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/back.jpg);
+    background-size: 1000px;
+    background-position: center;
+    color: white;
+
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  label{
+    color: white;
+  }
+
+
+  #roomId {
+    margin-bottom: 10px; /* Tambahkan margin di bawah input */
+    color: white;
+  }
+  
+  #videos {
+    margin-top: 20px; /* Tambahkan margin di atas div videos */
+    text-align: center; /* Posisikan videoGrid di tengah */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px; /* Jarak antar item */
+  }
+  
+.grid-item {
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+.grid-item p {
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}
+.grid-item video {
+    max-height: 300px;
+    max-width: 100%;
+    box-shadow: -2px -2px 15px #888888;
+}
+.grid-item .kick_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#localVideo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#localVideo-container video {
+    width: 75%;
+    height: 75%;
+}
+
+
+#roomId {
+        width: 250px; /* Atur lebar input sesuai kebutuhan */
+        padding: 5px 10px; /* Atur padding untuk menjaga tampilan input */
+        border: 2px solid white; /* Atur border dengan ketebalan 2px dan warna putih */
+        border-radius: 10px; /* Sudut melengkung */
+        background-color: transparent; /* Jadikan background transparan */
+}
+      
+
+footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px 0;
+  }
+  
+  footer .col {
+    display: flex;
+    justify-content:center; /* Mengatur jarak antara tombol-tombol */
+  }
+  
+  footer button {
+    background-color: #ccff00; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Menghapus border */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Menjadikan kursor menjadi tangan saat mengarah ke tombol */
+    transition: background-color 0.3s ease; /* Animasi transisi warna latar belakang saat hover */
+    margin-right: 5px;
+  }
+  
+  footer button:hover {
+    background-color: #00b3a4; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan saat hover */
+  }
+  
